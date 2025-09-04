@@ -1,16 +1,16 @@
 package balancer
 
 import (
-	ip_hash "github.com/aaydin-tr/divisor/core/ip-hash"
-	least_algorithm "github.com/aaydin-tr/divisor/core/least-algorithm"
-	random "github.com/aaydin-tr/divisor/core/random"
-	round_robin "github.com/aaydin-tr/divisor/core/round-robin"
-	"github.com/aaydin-tr/divisor/core/types"
-	w_round_robin "github.com/aaydin-tr/divisor/core/w-round-robin"
+	ip_hash "github.com/PrathamNabira/Load-balancer-qa/core/ip-hash"
+	least_algorithm "github.com/PrathamNabira/Load-balancer-qa/core/least-algorithm"
+	random "github.com/PrathamNabira/Load-balancer-qa/core/random"
+	round_robin "github.com/PrathamNabira/Load-balancer-qa/core/round-robin"
+	"github.com/PrathamNabira/Load-balancer-qa/core/types"
+	w_round_robin "github.com/PrathamNabira/Load-balancer-qa/core/w-round-robin"
 
-	"github.com/aaydin-tr/divisor/internal/proxy"
+	"github.com/PrathamNabira/Load-balancer-qa/internal/proxy"
 
-	"github.com/aaydin-tr/divisor/pkg/config"
+	"github.com/PrathamNabira/Load-balancer-qa/pkg/config"
 )
 
 var balancers = map[string]func(config *config.Config, proxyFunc proxy.ProxyFunc) types.IBalancer{

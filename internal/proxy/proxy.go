@@ -5,9 +5,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/aaydin-tr/divisor/core/types"
-	"github.com/aaydin-tr/divisor/pkg/config"
-	"github.com/aaydin-tr/divisor/pkg/helper"
+	"github.com/PrathamNabira/Load-balancer-qa/core/types"
+	"github.com/PrathamNabira/Load-balancer-qa/pkg/config"
+	"github.com/PrathamNabira/Load-balancer-qa/pkg/helper"
 	"github.com/google/uuid"
 	"github.com/valyala/fasthttp"
 	"go.uber.org/zap"

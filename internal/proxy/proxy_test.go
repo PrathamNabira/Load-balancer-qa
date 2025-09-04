@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/aaydin-tr/divisor/pkg/config"
+	"github.com/PrathamNabira/Load-balancer-qa/pkg/config"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/valyala/fasthttp"

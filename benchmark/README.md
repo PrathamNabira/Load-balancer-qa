@@ -10,7 +10,7 @@ The load tests were conducted using the following environment:
 - RAM: 16.0 GB
 - Operating System: Windows 10 Pro 21H2
 
-With this [docker-compose.yml](https://github.com/aaydin-tr/divisor/blob/main/benchmark/docker-compose.yml) file, we launched 4 different backend services and used these services in the tests. Used [bombardier](https://github.com/codesenberg/bombardier) as a HTTP(S) benchmarking tool, used Divisor built-in monitoring system for **Server stats**
+With this [docker-compose.yml](https://github.com/PrathamNabira/Load-balancer-qa/blob/main/benchmark/docker-compose.yml) file, we launched 4 different backend services and used these services in the tests. Used [bombardier](https://github.com/codesenberg/bombardier) as a HTTP(S) benchmarking tool, used Divisor built-in monitoring system for **Server stats**
 
 ### Round-robin
 

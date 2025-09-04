@@ -1,4 +1,4 @@
-module github.com/aaydin-tr/divisor
+module github.com/PrathamNabira/Load-balancer-qa
 
 go 1.22
 

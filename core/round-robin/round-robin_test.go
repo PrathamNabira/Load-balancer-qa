@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/aaydin-tr/divisor/mocks"
+	"github.com/PrathamNabira/Load-balancer-qa/mocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/valyala/fasthttp"
 )

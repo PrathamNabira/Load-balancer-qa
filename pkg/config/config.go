@@ -7,9 +7,9 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/aaydin-tr/divisor/core/types"
-	"github.com/aaydin-tr/divisor/pkg/helper"
-	"github.com/aaydin-tr/divisor/pkg/http"
+	"github.com/PrathamNabira/Load-balancer-qa/core/types"
+	"github.com/PrathamNabira/Load-balancer-qa/pkg/helper"
+	"github.com/PrathamNabira/Load-balancer-qa/pkg/http"
 	"github.com/valyala/fasthttp"
 	"gopkg.in/yaml.v3"
 )

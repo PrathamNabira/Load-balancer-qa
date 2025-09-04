@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/aaydin-tr/divisor/core/types"
+	"github.com/PrathamNabira/Load-balancer-qa/core/types"
 	"github.com/fasthttp/router"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/shirou/gopsutil/cpu"
