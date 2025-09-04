@@ -65,22 +65,22 @@ func GetLogFile() string {
 	logDir := GetLogFolder()
 	err := CreateLogDirIfNotExist(logDir)
 	if err != nil {
-		return "./divisor.log"
+		return "./loadbalancer.log"
 	}
 
-	return logDir + "divisor.log"
+	return logDir + "loadbalancer.log"
 }
 
 func GetLogFolder() string {
 	var dir string
 	switch runtime.GOOS {
 	case "windows":
-		dir = os.Getenv("LocalAppData") + "\\divisor\\"
+		dir = os.Getenv("LocalAppData") + "\\loadbalancer\\"
 		if dir == "" {
 			return ""
 		}
 	default: // Unix
-		dir = "/var/log/divisor/"
+		dir = "/var/log/loadbalancer/"
 	}
 
 	return dir

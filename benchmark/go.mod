@@ -1,4 +1,4 @@
-module divisor-benchmark
+module loadbalancer-benchmark
 
 go 1.20
 

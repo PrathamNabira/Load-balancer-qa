@@ -59,7 +59,7 @@ func main() {
 		zap.S().Error("No available servers")
 		return
 	}
-	zap.S().Infof("All proxies are ready, divisor will use `%s` algorithm health checker func will trigger every %v", config.Type, config.HealthCheckerTime)
+	zap.S().Infof("All proxies are ready, loadbalancer will use `%s` algorithm health checker func will trigger every %v", config.Type, config.HealthCheckerTime)
 
 	server := fasthttp.Server{
 		Handler:                       proxies.Serve(),
@@ -71,7 +71,7 @@ func main() {
 		IdleTimeout:                   config.Server.IdleTimeout,
 		DisableKeepalive:              config.Server.DisableKeepalive,
 		DisableHeaderNamesNormalizing: config.Server.DisableHeaderNamesNormalizing,
-		Name:                          "divisor",
+		Name:                          "loadbalancer",
 	}
 
 	// Start monitoring server
@@ -79,7 +79,7 @@ func main() {
 
 	ln, err := net.Listen("tcp4", config.GetAddr())
 	if err != nil {
-		zap.S().Errorf("Error while starting divisor server %s", err)
+		zap.S().Errorf("Error while starting loadbalancer server %s", err)
 		return
 	}
 
@@ -102,7 +102,7 @@ func main() {
 		}
 
 		if err != nil {
-			zap.S().Errorf("Error while running divisor server %s", err)
+			zap.S().Errorf("Error while running loadbalancer server %s", err)
 		}
 	}()
 
