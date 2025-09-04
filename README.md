@@ -143,11 +143,6 @@ While Divisor has several features, there are also some areas for improvement th
 
 By addressing these issues and adding new features, we aim to make Divisor an even more versatile and powerful tool for managing traffic in modern web applications.
 
-## Contributors
-<a href = "https://github.com/aaydin-tr/divisor/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=aaydin-tr/divisor"/>
-</a>
-
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
